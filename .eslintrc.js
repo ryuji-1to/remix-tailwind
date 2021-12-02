@@ -23,5 +23,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'no-undef': 'error',
     'no-unused-vars': 'error',
+    'no-console': 'warn',
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
   },
 };

@@ -11,7 +11,7 @@ import type { ReactNode } from 'react';
 
 import globalStylesUrl from '~/styles/global.css';
 
-export let links: LinksFunction = () => {
+export const links: LinksFunction = () => {
   return [{ rel: 'stylesheet', href: globalStylesUrl }];
 };
 

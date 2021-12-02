@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -15,6 +16,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    project: './tsconfig.json',
     ecmaVersion: 13,
     sourceType: 'module',
   },
@@ -26,4 +28,5 @@ module.exports = {
     'no-console': 'warn',
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
   },
+  settings: { react: { version: 'detect' } },
 };

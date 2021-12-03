@@ -1,7 +1,7 @@
 import type { LoaderFunction } from 'remix';
 import { Link, useLoaderData } from 'remix';
 
-export const loader: LoaderFunction = () => {
+export const loader: LoaderFunction = async () => {
   return 'This is a Remix template';
 };
 
@@ -16,3 +16,7 @@ export default function Index() {
     </div>
   );
 }
+
+export const ErrorBoundary = () => {
+  return <div>ErrorBoundary</div>;
+};

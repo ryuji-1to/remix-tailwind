@@ -1,11 +1,18 @@
 import type { LoaderFunction } from 'remix';
-import { useLoaderData } from 'remix';
+import { Link, useLoaderData } from 'remix';
 
 export const loader: LoaderFunction = () => {
-  return 'hello';
+  return 'This is a Remix template';
 };
 
 export default function Index() {
   const data = useLoaderData();
-  return <div className="text-red-200">{data}</div>;
+  return (
+    <div>
+      <p className="text-blue-500">{data}</p>
+      <Link to="/about" className="underline">
+        go to about page
+      </Link>
+    </div>
+  );
 }

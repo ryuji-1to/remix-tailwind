@@ -6,7 +6,7 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "target": "ES2019",
+    "target": "es5",
     "strict": true,
     "paths": {
       "~/*": ["./app/*"]

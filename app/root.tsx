@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+import type { LinksFunction } from 'remix';
 import {
   Links,
   LiveReload,
@@ -6,8 +8,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from 'remix';
-import type { LinksFunction } from 'remix';
-import type { ReactNode } from 'react';
 
 import globalStylesUrl from '~/styles/global.css';
 
@@ -23,13 +23,13 @@ export default function App() {
   );
 }
 
-function Document({
+const Document = ({
   children,
   title,
 }: {
   children: ReactNode;
   title?: string;
-}) {
+}) => {
   return (
     <html lang="ja">
       <head>
@@ -47,4 +47,4 @@ function Document({
       </body>
     </html>
   );
-}
+};

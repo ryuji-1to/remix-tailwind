@@ -26,6 +26,9 @@ module.exports = {
     'no-undef': 'error',
     'no-unused-vars': 'error',
     'no-console': 'warn',
+    'no-use-before-define': 'error',
+    'camelcase': 'error',
+    'prefer-const': 'error',
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'arrow-body-style': ['error', 'always'],
     'func-style': ['error', 'expression', { allowArrowFunctions: true }],
@@ -33,19 +36,26 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'jsx-a11y/no-autofocus': 'off',
+    'newline-before-return': 'error',
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      { prefer: 'type-imports' },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
     ],
-    // 'jsx-a11y/anchor-is-valid': [
-    //   'error',
-    //   {
-    //     components: ['Link'],
-    //     specialLink: ['hrefLeft', 'hrefRight'],
-    //     aspects: ['invalidHref', 'preferButton'],
-    //   },
-    // ],
-    'jsx-a11y/no-autofocus': 'off',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: ['variable'],
+        types: ['boolean'],
+        format: ['PascalCase'],
+        prefix: ['is', 'should', 'has', 'can', 'will'],
+      },
+    ],
   },
   settings: { react: { version: 'detect' } },
 };

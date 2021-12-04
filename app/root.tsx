@@ -15,14 +15,6 @@ export const links: LinksFunction = () => {
   return [{ rel: 'stylesheet', href: globalStylesUrl }];
 };
 
-export default function App() {
-  return (
-    <Document>
-      <Outlet />
-    </Document>
-  );
-}
-
 const Document = ({
   children,
   title,
@@ -48,3 +40,11 @@ const Document = ({
     </html>
   );
 };
+
+export default function App() {
+  return (
+    <Document>
+      <Outlet />
+    </Document>
+  );
+}

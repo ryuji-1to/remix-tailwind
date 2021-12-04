@@ -7,6 +7,7 @@ export const loader: LoaderFunction = () => {
 
 export default function SampleRoute() {
   const data = useLoaderData();
+
   return (
     <div>
       <p>{data}</p>

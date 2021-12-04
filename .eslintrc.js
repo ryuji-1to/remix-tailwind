@@ -29,7 +29,7 @@ module.exports = {
     'no-use-before-define': 'error',
     'camelcase': 'error',
     'prefer-const': 'error',
-    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
+    'arrow-parens': ['error', 'always', { requireForBlockBody: true }],
     'arrow-body-style': ['error', 'always'],
     'func-style': ['error', 'expression', { allowArrowFunctions: true }],
     'react/prop-types': 'off',

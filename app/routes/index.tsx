@@ -1,8 +1,15 @@
-import type { LoaderFunction } from 'remix';
+import type { LoaderFunction, MetaFunction } from 'remix';
 import { Link, useLoaderData } from 'remix';
 
 export const loader: LoaderFunction = async () => {
   return 'This is a Remix template';
+};
+
+export const meta: MetaFunction = () => {
+  return {
+    title: 'Remix Template',
+    description: 'This is a Remix template',
+  };
 };
 
 export default function Index() {

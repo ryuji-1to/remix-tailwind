@@ -39,6 +39,10 @@ module.exports = {
     'jsx-a11y/no-autofocus': 'off',
     'newline-before-return': 'error',
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/typedef': [
+      'error',
+      { arrayDestructuring: true, parameter: true },
+    ],
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       { prefer: 'type-imports' },

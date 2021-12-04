@@ -1,8 +1,15 @@
-import type { LoaderFunction } from 'remix';
+import type { LoaderFunction, MetaFunction } from 'remix';
 import { Link, useLoaderData } from 'remix';
 
 export const loader: LoaderFunction = () => {
   return 'This is a sample page';
+};
+
+export const meta: MetaFunction = () => {
+  return {
+    title: 'Sample Page',
+    description: 'This is a sample page',
+  };
 };
 
 export default function SampleRoute() {

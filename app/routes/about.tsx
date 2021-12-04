@@ -1,9 +1,16 @@
 import { Outlet } from 'react-router';
-import type { LoaderFunction } from 'remix';
+import type { LoaderFunction, MetaFunction } from 'remix';
 import { useLoaderData } from 'remix';
 
 export const loader: LoaderFunction = () => {
   return 'about route';
+};
+
+export const meta: MetaFunction = () => {
+  return {
+    title: 'About Page',
+    description: 'This is about page',
+  };
 };
 
 export default function About() {

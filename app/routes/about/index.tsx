@@ -1,9 +1,14 @@
-import { Link } from 'remix';
+import type { LoaderFunction } from 'remix';
+import { Link, useLoaderData } from 'remix';
 
+export const loader: LoaderFunction = () => {
+  return 'Nested routes is great!!!!!!!!!';
+};
 export default function AboutIndex() {
+  const data = useLoaderData();
   return (
     <div>
-      <p className="text-blue-500">Nested routes is great</p>
+      <p className="text-blue-500">{data}</p>
       <Link to="./sample" className="underline">
         Sample
       </Link>

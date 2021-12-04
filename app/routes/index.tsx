@@ -16,7 +16,3 @@ export default function Index() {
     </div>
   );
 }
-
-export const ErrorBoundary = () => {
-  return <div>ErrorBoundary</div>;
-};

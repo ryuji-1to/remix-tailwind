@@ -3,7 +3,7 @@ import type { LoaderFunction } from 'remix';
 import { useLoaderData } from 'remix';
 
 export const loader: LoaderFunction = () => {
-  return 'about page';
+  return 'about route';
 };
 
 export default function About() {

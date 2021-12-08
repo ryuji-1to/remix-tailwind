@@ -1,7 +1,7 @@
 import type { LoaderFunction, MetaFunction } from 'remix';
 import { Link, useLoaderData } from 'remix';
 
-export const loader: LoaderFunction = () => {
+export const loader: LoaderFunction = async () => {
   return 'This is a sample page';
 };
 

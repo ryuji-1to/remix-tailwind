@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function About() {
-  const data = useLoaderData();
+  const data: string = useLoaderData();
 
   return (
     <div>

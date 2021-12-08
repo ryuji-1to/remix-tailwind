@@ -40,9 +40,17 @@ module.exports = {
     'jsx-a11y/no-autofocus': 'off',
     'newline-before-return': 'error',
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'error',
+    '@typescript-eslint/no-unsafe-member-access': 'error',
+    '@typescript-eslint/no-unsafe-return': 'error',
     '@typescript-eslint/typedef': [
       'error',
-      { arrayDestructuring: true, parameter: true },
+      {
+        arrayDestructuring: true,
+        parameter: true,
+        // variableDeclaration: true,
+        // variableDeclarationIgnoreFunction: true,
+      },
     ],
     '@typescript-eslint/consistent-type-imports': [
       'warn',

@@ -17,7 +17,7 @@ export default function About() {
   const data: string = useLoaderData();
 
   return (
-    <div>
+    <div className="p-2">
       <h1 className="text-red-800">This is {data}</h1>
       <Outlet />
     </div>

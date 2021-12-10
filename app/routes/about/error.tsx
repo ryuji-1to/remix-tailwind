@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader: LoaderFunction = () => {
-  throw Error('This message thrown by loader function');
+  throw Error('This message is thrown by loader function');
 };
 
 export default function ErrorRoute() {

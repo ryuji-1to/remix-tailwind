@@ -1,5 +1,5 @@
-import { Outlet } from 'react-router';
 import type { LoaderFunction, MetaFunction } from 'remix';
+import { Outlet } from 'remix';
 import { useLoaderData } from 'remix';
 
 export const loader: LoaderFunction = () => {

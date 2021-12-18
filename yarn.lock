@@ -4069,10 +4069,10 @@ remark-rehype@^9.0.0:
     mdast-util-to-hast "^11.0.0"
     unified "^10.0.0"
 
-remix@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/remix/-/remix-1.0.6.tgz"
-  integrity sha512-9yN3vdVgM/U1yaNToUDzvYYlNAFXtRyxCVvc2kCS1yOVVBeDkC3d58dD8MZx8aSZFsWpDBR8yW+LZTlY5G7/Bw==
+remix@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/remix/-/remix-1.1.1.tgz#d81c5a2a6ceb94df59f7eeb14a85096b9984b62f"
+  integrity sha512-bo/300CdEAidEwn+r+vouPeZgDd+64Uhs4z0nTv1FRNfzt9NhHVLeJHO1M3EPa55imwGhduIzq3uVDxzz1WE1w==
   dependencies:
     fs-extra "^10.0.0"
 
